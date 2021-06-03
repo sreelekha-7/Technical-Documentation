@@ -1,0 +1,357 @@
+<nav id="navbar">
+    <header>Python Documentation</header>
+    <link rel="stylesheet" href="style.css">
+
+   
+
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#What_you_should_already_know"
+          >What you should already know</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#Python">Python</a>
+      </li>
+      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li>
+        <a class="nav-link" href="#Data_types">Data_types</a>
+      </li>
+      <li><a class="nav-link" href="#Python lists">Python lists</a></li>
+      <li><a class="nav-link" href="#Python tuples">Python tuples</a></li>
+      <li><a class="nav-link" href="#Python Dictionaries">Python Dictionaries</a></li>
+      
+      <li>
+        <a class="nav-link" href="#if...else_statement">if else statement</a>
+      </li>
+      <li><a class="nav-link" href="#while_statement">while statement</a></li>
+      <li>
+        <a class="nav-link" href="#Function_declarations"
+          >Function declarations</a
+        >
+      </li>
+      
+     
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDdO
+      mVD3Ktc0FKrsLPZ5i6KXjqEpp9MnOCjgAoyrHBU6bkb1OOMe2AoBrOyHNzYVvwiM&usqp=CAU" alt="Italian Trulli">
+      <article>
+        <p>
+            Python can be used on a server to create web applications.
+            Python can be used alongside software to create workflows.
+            Python can connect to database systems. It can also read and modify files.
+            Python can be used to handle big data and perform complex mathematics.
+            Python can be used for rapid prototyping, or for production-ready software development.
+        </p>
+  
+        <p>
+            Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+            Python has a simple syntax similar to the English language.
+            Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+            Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+            Python can be treated in a procedural way, an object-oriented way or a functional way.
+        </p>
+        <ul>
+          <li>
+            The most recent major version of Python is Python 3,
+            which we shall be using in this tutorial. However, Python 2,
+            although not being updated with anything other than security updates, is still quite popular.
+            In this tutorial Python will be written in a text editor.
+            It is possible to write Python in an Integrated Development Environment,
+            such as Thonny, Pycharm, Netbeans or Eclipse which
+            are particularly useful when managing larger collections of Python files.
+          </li>
+          <li>
+            Python was designed for readability, and has some similarities to 
+            the English language with influence from mathematics.
+            Python uses new lines to complete a command, as opposed to other 
+            programming languages which often use semicolons or parentheses.
+            Python relies on indentation, using whitespace, to define scope;
+            such as the scope of loops, functions and classes.
+            Other programming languages often use curly-brackets for this purpose.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <article>
+        <p>This guide assumes you have the following basic background:</p>
+  
+        <ul>
+          <li>
+            Many PCs and Macs will have python already installed.
+
+To check if you have python installed on a Windows PC,
+ search in the start bar for Python or run the following on the Command Line
+          </li>
+          <li>Python is an interpreted programming language, this means that as a developer you write Python (.py)
+               files in a text editor and then put those files into the python interpreter to be executed.</li>
+          <li>
+            To test a short amount of code in python sometimes it is quickest
+             and easiest not to write the code in a file.
+             This is made possible because Python can be run as a command line itself.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Python">
+      <header>Python</header>
+      <article>
+        <p>
+            Python Indentation
+            Indentation refers to the spaces at the beginning of a code line.
+            
+            Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+            
+            Python uses indentation to indicate a block of code.
+        </p>
+  
+        <p>
+            <code
+            >if 5 > 2:
+            print("Five is greater than two!") 
+           if 5 > 2:
+                   print("Five is greater than two!") 
+          </code>
+          
+        </p>
+       
+      </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+        To get started with writing Python, open the Scratchpad and write your
+        first "Hello world" Python code:
+        <code
+          >print("Hello World")
+        </code>
+  
+       
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>
+        Python has no command for declaring a variable.
+
+A variable is created the moment you first assign a value to it.
+      </p>
+      <p>
+        Variables do not need to be declared with any particular type,
+         and can even change type after they have been set.
+      </p>
+      <p>
+        <code
+        >x = 5
+        y = "John"
+        print(x)
+        print(y)
+      </code>
+
+      </p>
+    </section>
+    <section class="main-section" id="Data Types">
+      <header>Data Types</header>
+      <article>
+        
+        <p>
+            In programming, data type is an important concept.
+
+            Variables can store data of different types, and different types can do different things.
+            
+            Python has the following data types built-in by default, in these categories:
+        </p>
+        
+        <p>
+            Text Type:	str
+            Numeric Types:	int, float, complex
+            Sequence Types:	list, tuple, range
+            Mapping Type:	dict
+            Set Types:	set, frozenset
+            Boolean Type:	bool
+            Binary Types:	bytes, bytearray, memoryview
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Python Lists">
+      <header>Python Lists</header>
+      <article>
+        <p>
+            Lists are used to store multiple items in a single variable.
+
+            Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+            
+            Lists are created using square brackets:
+        </p>
+  
+        <p>
+            When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+
+            If you add new items to a list, the new items will be placed at the end of the list.
+            To determine how many items a list has, use the len() function:
+        </p>
+        <code>list1 = ["apple", "banana", "cherry"]
+            list2 = [1, 5, 7, 9, 3]
+            list3 = [True, False, False]</code>
+        <p>
+            The list is changeable, meaning that we can change,
+             add, and remove items in a list after it has been created.
+        </p>
+  
+        
+      </article>
+    </section>
+    <section class="main-section" id="Python Tuplesv">
+      <header>Python Tuples</header>
+      <article>
+        <p>
+            Tuples are used to store multiple items in a single variable.
+
+            Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+            
+            A tuple is a collection which is ordered and unchangeable.
+            
+            Tuples are written with round brackets.
+        </p>
+        <code>thistuple = ("apple", "banana", "cherry")
+            print(len(thistuple))</code>
+        <p>
+          
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Python Dictionaries">
+      <header>Python Dictionaries</header>
+      <article>
+        <p>
+            Dictionaries are used to store data values in key:value pairs.
+
+            A dictionary is a collection which is ordered*, changeable and does not allow duplicates.
+        </p>
+  
+        <code>thisdict = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+          }
+          print(thisdict)</code>
+        <p>
+            When we say that dictionaries are ordered,
+             it means that the items have a defined order, and that order will not change.
+
+            Unordered means that the items does not have a defined order,
+             you cannot refer to an item by using an index.
+        </p>
+  
+       
+      </article>
+    </section>
+    
+    <section class="main-section" id="if...else_statement">
+      <header>if...else statement</header>
+      <article>
+        Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+These conditions can be used in several ways, most commonly in "if statements" and loops.
+
+An "if statement" is written by using the if keyword.
+  
+        <code>a = 33
+            b = 200
+            if b > a:
+              print("b is greater than a")</code>
+       
+        <p>
+            Elif
+            The elif keyword is pythons way of saying 
+            "if the previous conditions were not true, then try this condition".
+        </p>
+        <code
+          >a = 33
+          b = 33
+          if b > a:
+            print("b is greater than a")
+          elif a == b:
+            print("a and b are equal")
+        </code>
+        The else keyword catches anything which isn't caught by the preceding conditions.
+  
+        <code
+          >a = 200
+          b = 33
+          if b > a:
+            print("b is greater than a")
+          elif a == b:
+            print("a and b are equal")
+          else:
+            print("a is greater than b")</code
+        >
+       
+  
+      </article>
+    </section>
+    <section class="main-section" id="while_statement">
+      <header>while statement</header>
+      <article>
+        With the while loop we can execute a set of statements as long as a condition is true.
+  
+        <code>i = 1
+            while i < 6:
+              print(i)
+              i += 1</code> 
+  
+       
+      </article>
+    </section>
+    <section class="main-section" id="Function_declarations">
+      <header>Function declarations</header>
+      <article>
+        A function is a block of code which only runs when it is called.
+
+        You can pass data, known as parameters, into a function.
+        
+        A function can return data as a result.
+  
+        
+        <p>
+            In Python a function is defined using the def keyword:
+        </p>
+  
+        <code>def my_function():
+            print("Hello from a function")</code>
+        <p>
+            To call a function, use the function name followed by parenthesis:
+        </p>
+        <code>def my_function():
+            print("Hello from a function")
+          
+          my_function()</code>
+        <p>
+            Information can be passed into functions as arguments.
+
+            Arguments are specified after the function name, inside the parentheses.
+             You can add as many arguments as you want, just separate them with a comma.
+            
+            The following example has a function with one argument (fname).
+             When the function is called, we pass along a first name, 
+             which is used inside the function to print the full name:
+        </p>
+      </article>
+    </section>
+    
+  </main>
+  
